@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوبر ماركت حديث</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">متجر النضارة</div>
+        <div class="cart-icon" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count" class="cart-badge">0</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="products-grid" id="products-grid">
+            </section>
+        
+        <aside class="cart-sidebar" id="cart-sidebar">
+            <h2>سلة المشتريات</h2>
+            <ul id="cart-items">
+                </ul>
+            <div class="cart-total">
+                <span>الإجمالي:</span>
+                <span id="cart-total-price">0.00 ريال</span>
+            </div>
+            <button class="btn-checkout">إتمام الشراء</button>
+        </aside>
+    </main>
+
+    <script src="script.js"></script> 
+</body>
+</html>
